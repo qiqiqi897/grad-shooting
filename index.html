@@ -55,10 +55,27 @@
         .view-work-btn:hover { background: var(--accent-gold); color: white; }
 
         /* 2. Price Section (放在作品集之前) */
-        .price-section { background: #F7F5F0; text-align: center; }
-        .price-box { max-width: 500px; margin: 40px auto; padding: 40px; border: 1px solid #E5E2D9; background: #fff; }
-        .price-tag { font-size: 2.5rem; color: var(--accent-gold); margin: 20px 0; font-family: 'Cormorant Garamond'; font-style: italic; }
-
+        .price-section { 
+            background: #F7F5F0; 
+            text-align: center; 
+            min-height: auto;       /* 核心修改：取消强制全屏高度 */
+            padding: 60px 8%;       /* 核心修改：缩小上下间距 */
+        }
+        .price-box { 
+            max-width: 500px; 
+            margin: 20px auto;      /* 缩小外边距 */
+            padding: 40px; 
+            border: 1px solid #E5E2D9; 
+            background: #fff; 
+        }
+        .price-tag { 
+            font-size: 2.5rem; 
+            color: var(--accent-gold); 
+            margin: 20px 0; 
+            font-family: 'Cormorant Garamond'; 
+            font-style: italic; 
+        }
+        
         /* 3. Portfolio Grid - 拼贴逻辑 */
         .category-label { font-size: 1.2rem; margin: 60px 0 30px; text-align: center; letter-spacing: 4px; text-transform: uppercase; color: var(--accent-green); }
         .gallery-grid { 
